@@ -1,0 +1,140 @@
+:root {
+  --light-color: white;
+  --body-text-color: #434455;
+  --dark-heading-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --active-text-color: #404bbf;
+  --active-btn-color: #404bbf;
+  --primary-bcg-color: white;
+  --footer-color-text: #e7e9fc;
+  --dark-bcg-color: #2e2f42;
+  --light-bcg-color: #f4f4fd;
+}
+body {
+  background-color: var(--primary-bcg-color);
+  color: var(--body-text-color);
+  font-family: Roboto, sans-serif;
+}
+.accent {
+  color: var(--accent-color);
+}
+.logo {
+  color: var(--dark-heading-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+
+/*-------------------------- Site nav */
+.site-nav .link {
+  color: var(--dark-heading-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration-line: none;
+}
+.site-nav .link:focus,
+.site-nav .link:hover {
+  color: var(--active-text-color);
+}
+
+/* ---------------------------Contakts */
+.contakts {
+  color: var(--body-text-color);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration-line: none;
+}
+.contakts:hover,
+.contakts:focus {
+  color: var(--active-text-color);
+}
+
+/*--------------------------Hero  */
+.hero {
+  background-color: var(--dark-bcg-color);
+}
+.hero-title {
+  color: var(--light-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+/* --------------------------Button */
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.hero .btn {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
+.hero .btn:focus,
+.hero .btn:hover {
+  background-color: var(--active-btn-color);
+}
+/* -------------------------Section Features*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list-item {
+  color: var(--dark-heading-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+/* -------------------------Section Works*/
+.sections-title {
+  color: var(--dark-heading-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+/* --------------------------Section Team */
+.section-team {
+  background-color: var(--light-bcg-color);
+}
+/* ----------------------------Footer */
+.footer-page {
+  background-color: var(--dark-bcg-color);
+  color: var(--footer-color-text);
+}
+.footer-page .logo {
+  color: var(--light-color);
+}
+/* --------------------------Filter */
+.filter .btn {
+  background-color: var(--light-bcg-color);
+  color: var(--active-btn-color);
+}
+.filter .btn:focus,
+.filter .btn:hover {
+  background-color: var(--active-btn-color);
+  color: var(--light-color);
+}
