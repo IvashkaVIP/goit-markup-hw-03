@@ -10,6 +10,16 @@
   --dark-bcg-color: #2e2f42;
   --light-bcg-color: #f4f4fd;
 }
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+
 body {
   background-color: var(--primary-bcg-color);
   color: var(--body-text-color);
