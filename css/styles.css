@@ -19,7 +19,6 @@ html{
   box-sizing: inherit;
 }
 body {
-  margin: 0;
   background-color: var(--primary-bcg-color);
   color: var(--body-text-color);
   font-family: Roboto, sans-serif;
