@@ -10,6 +10,25 @@
   --dark-bcg-color: #2e2f42;
   --light-bcg-color: #f4f4fd;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin: 0px;
+}
+ul{
+  margin: 0px;
+  padding-left: 0px;
+}
+button{
+  cursor: pointer;
+}
+img{
+  display: block;
+}
 html{
   box-sizing: border-box;
 }
@@ -85,13 +104,16 @@ body {
 .hero-title {
   margin-top: 0px;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 494px;
+  text-align: center;
   
   color: var(--light-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
+  /* letter-spacing: 0.02em; */
   
   outline: 3px solid red;
 
