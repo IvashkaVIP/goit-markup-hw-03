@@ -185,11 +185,10 @@ margin-bottom: 8px; */
 } */
 /* --------------------------Section Team */
 .section-team {
+  padding-top: 120px;
   background-color: var(--light-bcg-color);
 }
-.section-team .container{
-  padding-top: 120px;
-}
+
 /* .section-team .section-title{
   margin-bottom: 72px;
 } */
