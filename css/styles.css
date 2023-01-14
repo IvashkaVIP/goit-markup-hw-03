@@ -154,16 +154,16 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section-features h3{
-margin-bottom: 8px;
+/* .section-features .list-item{
+margin-bottom: 8px; */
 }
 .section-features p{
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.list-item {
+.list-item {                    
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 
   color: var(--dark-heading-color);
   font-weight: 500;
@@ -172,17 +172,27 @@ margin-bottom: 8px;
   letter-spacing: 0.02em;
 }
 /* -------------------------Section Works*/
-.sections-title {
+.section-title {
+  margin-bottom: 72px;
   color: var(--dark-heading-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
+/* .section-works .section-title {
+  margin-bottom: 72px;
+} */
 /* --------------------------Section Team */
 .section-team {
   background-color: var(--light-bcg-color);
 }
+.section-team .container{
+  padding-top: 120px;
+}
+/* .section-team .section-title{
+  margin-bottom: 72px;
+} */
 /* ----------------------------Footer */
 .footer-page {
   background-color: var(--dark-bcg-color);
