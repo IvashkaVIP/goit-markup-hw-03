@@ -16,25 +16,25 @@ h3,
 h4,
 h5,
 h6,
-p{
+p {
   margin: 0px;
 }
-ul{
+ul {
   margin: 0px;
   padding-left: 0px;
 }
-button{
+button {
   cursor: pointer;
 }
-img{
+img {
   display: block;
 }
-html{
+html {
   box-sizing: border-box;
 }
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 body {
@@ -43,7 +43,7 @@ body {
   font-family: Roboto, sans-serif;
 }
 /* ---------------------------Утилиты */
-.container{
+.container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
@@ -68,17 +68,17 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section{
+.section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 /*--------------------------  Header  */
-.header-main{
+.header-main {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--footer-color-text);
 }
-.nav-main{
+.nav-main {
   display: flex;
   align-items: center;
 }
@@ -108,20 +108,20 @@ body {
 .site-nav .link:hover {
   color: var(--active-text-color);
 }
-.site-nav{
+.site-nav {
   display: flex;
 }
-.site-nav .item + .item{
+.site-nav .item + .item {
   margin-left: 40px;
 }
 /* ---------------------------Contakts */
-.adress-main{
-margin-left: auto;
+.adress-main {
+  margin-left: auto;
 }
-.site-adress{
+.site-adress {
   display: flex;
-} 
-.site-adress .item + .item{
+}
+.site-adress .item + .item {
   margin-left: 40px;
 }
 .contakts {
@@ -149,7 +149,7 @@ margin-left: auto;
   margin-right: auto;
   width: 494px;
   text-align: center;
-  
+
   color: var(--light-color);
   font-weight: 700;
   font-size: 56px;
@@ -179,23 +179,23 @@ margin-left: auto;
   background-color: var(--active-btn-color);
 }
 /* -------------------------Section-1 Features*/
-.section.feature{
+.section.feature {
   padding-bottom: 0px;
 }
-.feature-list{
+.feature-list {
   display: flex;
-  gap: 24px; 
+  gap: 24px;
   margin-left: auto;
   margin-right: auto;
 }
-.text-item{
+.text-item {
   width: 264px;
 }
-.text-description{
+.text-description {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.list-item {                    
+.list-item {
   margin-top: 0px;
   margin-bottom: 8px;
 
@@ -215,23 +215,24 @@ margin-left: auto;
   letter-spacing: 0.02em;
   text-align: center;
 }
-.works.list{
+.works.list {
   display: flex;
   gap: 24px;
 }
 /* --------------------------Section-3 Team */
 .section.team {
-  padding-bottom: 152px;
   background-color: var(--light-bcg-color);
 }
-.team-list{
+.team-list {
   display: flex;
   gap: 24px;
 }
-.team-item{
+.team-item {
+  padding-bottom: 32px;
   text-align: center;
+  background-color: var(--light-color);
 }
-.team-foto{
+.team-foto {
   margin-bottom: 32px;
 }
 /* ----------------------------Footer */
@@ -244,16 +245,45 @@ margin-left: auto;
 .footer-page .logo {
   display: inline-block;
   margin-right: 0px;
-  margin-bottom: 16px; 
+  margin-bottom: 16px;
   color: var(--light-color);
 }
 /* --------------------------Filter */
 .filter .btn {
   background-color: var(--light-bcg-color);
   color: var(--active-btn-color);
+
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .filter .btn:focus,
 .filter .btn:hover {
   background-color: var(--active-btn-color);
   color: var(--light-color);
+
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+.filter.list {
+  display: flex;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  gap: 24px;
+  justify-content: center;
+}
+.portfolio.list {
+  display: flex;
+  margin-bottom: 120px;
+
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.portfolio-description {
+  padding: 32px 0px 32px 16px;
+  border: 1px solid var(--footer-color-text);
+  border-top: none;
+}
+.portfolio-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
