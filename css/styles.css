@@ -44,10 +44,9 @@ body {
 }
 /* ---------------------------Утилиты */
 .container{
-  width: 1152px;
-  padding: 0px 12px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
   outline: 2px solid red;
 }
 .list {
@@ -58,8 +57,23 @@ body {
 .accent {
   color: var(--accent-color);
 }
-
-/*-----------------------------------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/*--------------------------  Header  */
 .header-main{
   display: flex;
   align-items: center;
@@ -172,26 +186,27 @@ margin-left: auto;
 .hero .btn:hover {
   background-color: var(--active-btn-color);
 }
-/* -------------------------Section Features*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+/* -------------------------Section-1 Features*/
+.section.feature{
+  padding-bottom: 0px;
 }
+.feature-list{
+  display: flex;
+  gap: 24px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature-item{
+  width: 264px;
+}
+
 /* .section-features .list-item{
 margin-bottom: 8px; */
 
-.section-features p{
+/* .section-features p{
   margin-top: 0px;
   margin-bottom: 0px;
-}
+} */
 .list-item {                    
   margin-top: 0px;
   margin-bottom: 8px;
@@ -202,7 +217,7 @@ margin-bottom: 8px; */
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-/* -------------------------Section Works*/
+/* -------------------------Section-2 Works*/
 .section-title {
   margin-bottom: 72px;
   color: var(--dark-heading-color);
@@ -210,13 +225,17 @@ margin-bottom: 8px; */
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
+}
+.works.list{
+  display: flex;
+  gap: 24px;
 }
 /* .section-works .section-title {
   margin-bottom: 72px;
 } */
-/* --------------------------Section Team */
-.section-team {
-  padding-top: 120px;
+/* --------------------------Section-3 Team */
+.section.team {
   background-color: var(--light-bcg-color);
 }
 
