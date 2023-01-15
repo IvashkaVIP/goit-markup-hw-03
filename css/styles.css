@@ -42,18 +42,34 @@ body {
   color: var(--body-text-color);
   font-family: Roboto, sans-serif;
 }
+/* ---------------------------Утилиты */
 .container{
   width: 1152px;
   padding: 0px 12px;
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid red;
-  
+}
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
 }
 .accent {
   color: var(--accent-color);
 }
+
+/*-----------------------------------*/
+.header-main{
+  display: flex;
+  align-items: center;
+}
+.nav-main{
+  display: flex;
+  align-items: center;
+}
 .logo {
+  margin-right: 76px;
   color: var(--dark-heading-color);
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -62,27 +78,42 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
-.list {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
-}
-
 /*-------------------------- Site nav */
 .site-nav .link {
+  display: block;
   color: var(--dark-heading-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration-line: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .site-nav .link:focus,
 .site-nav .link:hover {
   color: var(--active-text-color);
 }
+.site-nav{
+  display: flex;
+}
+.site-nav .item + .item{
+  margin-left: 40px;
+}
+/* .site-nav .item:last-child{
+  margin-right: 0px;
+} */
 
 /* ---------------------------Contakts */
+.adress-main{
+margin-left: auto;
+}
+.site-adress{
+  display: flex;
+} 
+.site-adress .item + .item{
+  margin-left: 40px;
+}
 .contakts {
   color: var(--body-text-color);
   font-style: normal;
@@ -156,7 +187,7 @@ body {
 }
 /* .section-features .list-item{
 margin-bottom: 8px; */
-}
+
 .section-features p{
   margin-top: 0px;
   margin-bottom: 0px;
