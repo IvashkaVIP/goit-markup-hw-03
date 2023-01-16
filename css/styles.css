@@ -73,10 +73,12 @@ body {
   padding-bottom: 120px;
 }
 /*--------------------------  Header  */
+.header-page{
+  border-bottom: 1px solid var(--footer-color-text);
+}
 .header-main {
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--footer-color-text);
+  align-items: center;  
 }
 .nav-main {
   display: flex;
@@ -139,6 +141,8 @@ body {
 
 /*--------------------------Hero  */
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
   text-align: center;
   background-color: var(--dark-bcg-color);
 }
@@ -264,17 +268,20 @@ body {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
+/*------------------------------Portfolio Section Filter ----*/
+.section-filter{
+  padding-top: 96px;
+  padding-bottom: 120px;
+  /* padding-bottom:   ; */
+}
 .filter.list {
   display: flex;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px; 
   gap: 24px;
   justify-content: center;
 }
 .portfolio.list {
   display: flex;
-  margin-bottom: 120px;
-
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
